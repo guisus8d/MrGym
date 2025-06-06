@@ -179,7 +179,16 @@ function toggleMenu() {
     cursor: default !important;
   }
 }
-
+@media (hover: none) {
+  a {
+    pointer-events: none !important; /* Desactiva hover, clicks, etc. */
+  }
+  
+  /* Si necesitas que el enlace siga siendo clickeable: */
+  a > * {
+    pointer-events: auto !important; /* Permite clicks en elementos hijos */
+  }
+}
 
 </style>
 
