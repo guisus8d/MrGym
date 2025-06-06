@@ -162,6 +162,25 @@ function toggleMenu() {
     top: -10px;
     left: 30px;
   }
+  /* Quitar hover en móviles (touch devices) */
+@media (hover: none) {
+  a:hover * {
+    opacity: 1 !important;
+    transform: none !important;
+    background: none !important;
+    color: inherit !important; /* Evitar cambios de color en texto */
+    border-color: inherit !important; /* Evitar cambios en bordes */
+    box-shadow: none !important; /* Eliminar sombras en hover */
+    /* Añade aquí cualquier propiedad afectada por el hover */
+  }
+  
+  /* Opcional: Desactivar cursor "pointer" en móviles */
+  a {
+    cursor: default !important;
+  }
+}
+
+
 </style>
 
 
