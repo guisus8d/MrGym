@@ -1,0 +1,48 @@
+---
+import Facebook from '../assets/iconos-footer/facebook.png';
+import Instagram from '../assets/iconos-footer/instagram.png';
+import Llamada from '../assets/iconos-footer/llamada-telefonica.png';
+import Whatsapp from '../assets/iconos-footer/whatsapp.png';
+
+---
+
+
+<footer>
+    <center>
+<div class="menu-inferior-Footer">
+<a href=""><img src={Facebook.src} alt="">
+</a>
+<a href=""><img src={Instagram.src} alt="">
+</a>
+<a href=""><img src={Llamada.src} alt="">
+</a>
+<a href=""><img src={Whatsapp.src} alt="">
+</a>
+</div>
+</center>
+</footer>
+
+<style>
+.menu-inferior-Footer{
+ position: relative;
+ width: 100%;
+ height: 50px;
+ background: black;
+ diaplay: flex;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+}
+
+.menu-inferior-Footer a {
+  margin: 5px;
+  position: relative;
+  top: 10px;
+  text-decoration: none;
+}
+
+.menu-inferior-Footer img{
+    width: 30px;
+
+}
+  </style>
