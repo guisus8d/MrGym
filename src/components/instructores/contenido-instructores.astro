@@ -5,6 +5,7 @@ import '@fontsource-variable/teko';
 import '@fontsource/permanent-marker';
 
 
+import IconoDeLlamada from '../../assets/instructores/icono-de-llamada.png';
 
 ---
 
@@ -24,7 +25,23 @@ import '@fontsource/permanent-marker';
 <li>- Diseña planes estrategicos.</li>
 <p>Entrenamiento de:</p>
 <li>- Fuerza, resistencia,velocidad, flexibilidad, acondicionamiento fisico.</li>
-    
+
+<!-- From Uiverse.io by adamgiebl --> 
+<button class="cssbuttons-io-button">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    width="24"
+    height="24"
+  >
+    <path fill="none" d="M0 0h24v24H0z"></path>
+    <img src={IconoDeLlamada.src} alt=""></path>
+  </svg>
+  <span>971 170 9794</span>
+</button>
+
+
+
 </nav>
 </div>
 
@@ -40,10 +57,26 @@ import '@fontsource/permanent-marker';
 <li>- programacion.</li>
 <li>- Dietas personalizadas y planes de <br>entrenamiento a medida.</li>
     
+
+
+<button class="cssbuttons-io-button">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    width="24"
+    height="24"
+  >
+    <path fill="none" d="M0 0h24v24H0z"></path>
+    <img src={IconoDeLlamada.src} alt=""></path>
+  </svg>
+  <span>971 170 9794</span>
+</button>
+
+
+
+
 </nav>
 </div>
-
-
 
 
 </div>
@@ -126,7 +159,7 @@ h4{
 .fondo-de-card-instructora {
   width: 120px;
   height: 120px;
-  background: url('../assets/instructores/fondo-card-instructora.jpg') no-repeat center center;
+  background: url('../../assets/instructores/fondo-card-instructora.jpg') no-repeat center center;
   background-size: cover;
   position: relative;
   border-radius: 50%;
@@ -137,10 +170,45 @@ h4{
 .fondo-de-card-instructor{
   width: 120px;
   height: 120px;
-  background: url('../assets/instructores/fondo-card-instructor.jpeg') no-repeat center center;
+  background: url('../../assets/instructores/fondo-card-instructor.jpeg') no-repeat center center;
   background-size: cover;
   position: relative;
   border-radius: 50%;
   margin: auto;
 }
+
+
+/* Botón de contactos */
+
+.cssbuttons-io-button {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 4px 20px;
+  color: white;
+  background: var(--color-tip2);
+  border: none;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  color: black;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.cssbuttons-io-button span{
+  margin-left: 10px;
+}
+.cssbuttons-io-button svg {
+  margin-right: -20px;
+
+}
+
+.cssbuttons-io-button img{
+  width: 15px;
+}
+
+
 </style>
