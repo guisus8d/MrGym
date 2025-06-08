@@ -89,9 +89,46 @@ import ImagenLogo from '../../assets/principal.png';
 
 </div>
 
-
-
 </center>
+<div class="review-card">
+  <div class="review-header">
+    <div class="review-author-date">
+      <p class="author">John Doe</p>
+      <p class="date">June 1, 2000</p>
+    </div>
+  </div>
+  <div class="review-title-rating">
+    <h3 class="title">Great Experience!</h3>
+    <div class="rating">
+      <div class="stars">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M9.049 2.927c.3-.916 1.603-.916 1.902 0l1.286 3.953a1.5 1.5 0 001.421 1.033h4.171c.949 0 1.341 1.154.577 1.715l-3.38 2.458a1.5 1.5 0 00-.54 1.659l1.286 3.953c.3.916-.757 1.67-1.539 1.145l-3.38-2.458a1.5 1.5 0 00-1.76 0l-3.38 2.458c-.782.525-1.838-.229-1.539-1.145l1.286-3.953a1.5 1.5 0 00-.54-1.659l-3.38-2.458c-.764-.561-.372-1.715.577-1.715h4.171a1.5 1.5 0 001.421-1.033l1.286-3.953z"></path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M9.049 2.927c.3-.916 1.603-.916 1.902 0l1.286 3.953a1.5 1.5 0 001.421 1.033h4.171c.949 0 1.341 1.154.577 1.715l-3.38 2.458a1.5 1.5 0 00-.54 1.659l1.286 3.953c.3.916-.757 1.67-1.539 1.145l-3.38-2.458a1.5 1.5 0 00-1.76 0l-3.38 2.458c-.782.525-1.838-.229-1.539-1.145l1.286-3.953a1.5 1.5 0 00-.54-1.659l-3.38-2.458c-.764-.561-.372-1.715.577-1.715h4.171a1.5 1.5 0 001.421-1.033l1.286-3.953z"></path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M9.049 2.927c.3-.916 1.603-.916 1.902 0l1.286 3.953a1.5 1.5 0 001.421 1.033h4.171c.949 0 1.341 1.154.577 1.715l-3.38 2.458a1.5 1.5 0 00-.54 1.659l1.286 3.953c.3.916-.757 1.67-1.539 1.145l-3.38-2.458a1.5 1.5 0 00-1.76 0l-3.38 2.458c-.782.525-1.838-.229-1.539-1.145l1.286-3.953a1.5 1.5 0 00-.54-1.659l-3.38-2.458c-.764-.561-.372-1.715.577-1.715h4.171a1.5 1.5 0 001.421-1.033l1.286-3.953z"></path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M9.049 2.927c.3-.916 1.603-.916 1.902 0l1.286 3.953a1.5 1.5 0 001.421 1.033h4.171c.949 0 1.341 1.154.577 1.715l-3.38 2.458a1.5 1.5 0 00-.54 1.659l1.286 3.953c.3.916-.757 1.67-1.539 1.145l-3.38-2.458a1.5 1.5 0 00-1.76 0l-3.38 2.458c-.782.525-1.838-.229-1.539-1.145l1.286-3.953a1.5 1.5 0 00-.54-1.659l-3.38-2.458c-.764-.561-.372-1.715.577-1.715h4.171a1.5 1.5 0 001.421-1.033l1.286-3.953z"></path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M9.049 2.927c.3-.916 1.603-.916 1.902 0l1.286 3.953a1.5 1.5 0 001.421 1.033h4.171c.949 0 1.341 1.154.577 1.715l-3.38 2.458a1.5 1.5 0 00-.54 1.659l1.286 3.953c.3.916-.757 1.67-1.539 1.145l-3.38-2.458a1.5 1.5 0 00-1.76 0l-3.38 2.458c-.782.525-1.838-.229-1.539-1.145l1.286-3.953a1.5 1.5 0 00-.54-1.659l-3.38-2.458c-.764-.561-.372-1.715.577-1.715h4.171a1.5 1.5 0 001.421-1.033l1.286-3.953z"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="review-content">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia
+    odio vitae vestibulum. Donec in efficitur ipsum, sed dapibus eros.
+  </div>
+</div>
+
+
+
+
+
 <style>
 li{
     text-align: left;
@@ -262,6 +299,96 @@ li{
     background: black;
     
 }
+
+
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color:  white;
+  max-width: 28rem;
+  width: 80%;
+  background-color: black;
+  padding: 1.25rem;
+  border-radius: 0.375rem;
+  margin: 50px auto;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: transform 150ms ease-in-out;
+     font-family: 'Rubik Variable', sans-serif;
+
+}
+
+.review-card:hover {
+  transform: scale(1.05);
+}
+
+.dark .review-card {
+  color: #fff;
+  background-color: #171717;
+}
+
+.review-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.review-author-date {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.author, .date {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.review-title-rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.title {
+  font-size: 1.05rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+.rating {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.stars {
+  display: flex;
+  flex-direction: row;
+}
+
+.stars svg {
+  height: 1rem;
+  width: 1rem;
+}
+
+.stars svg:not(:last-child) {
+  color: #facc15;
+}
+
+.stars svg:last-child {
+  color: #fef08a;
+}
+
+.review-content {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+
 </style>
 
 
