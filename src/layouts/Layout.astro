@@ -17,6 +17,16 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{ title }</title>
+		<link rel="icon" type="image/svg+xml" href="/favicon.png"/>
+		
+
+		<!-- apartado de meta datos informacion de la pagina vista de facebook, whatsapp, etc -->
+	
+	<meta property="og:title" content="Mr. O Gym">
+    <meta property="og:description" content="Mr. O Gym, tu lugar para alcanzar tus metas de fitness con los mejores instructores y un ambiente motivador.">
+    <meta property="og:url" content="https://mrogym.com">
+    <meta property="og:type" content="website">
+	
 	</head>
 	<body>
 		<slot />
