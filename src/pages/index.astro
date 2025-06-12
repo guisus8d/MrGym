@@ -1,11 +1,64 @@
 ---
 
 import Layout from '../layouts/Layout.astro';
-import Inicio from '../components/Inicio.astro';
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Header from '../components/Header.astro'
+// Supports weights 100-900
+import '@fontsource-variable/lexend';
+
+// Supports weights 100-900
+import '@fontsource-variable/inter';
+import ContenidoInicio from '../components/ComponentesInicio/ContenidoInicio.astro'
 ---
 
 <Layout title="Cargar">
-	<Inicio />
+
+<div class="FondoInicio">
+    <Header /> 
+    <div class="sombra">
+        <!-- bienvenida a la pagina Mr. o Gym -->
+        <p>
+            Bienvenido a la página de Mr. O Gym, donde 
+            encontrarás todo lo que necesitas para alcanzar
+             tus objetivos de fitness. 
+               
+        </p>
+    </div>
+</div>
+
 </Layout>
+body
+
+<style>
+
+    body{
+        background: black;
+    }
+
+    .FondoInicio {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('../assets/Fondos/Fondo.svg') no-repeat center center fixed;
+    background-size: cover;    
+}
+
+.sombra {
+    position: absolute;
+  
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(0deg, black, rgba(0, 0, 0, 0.616), transparent);
+    bottom: 0px;
+}
+
+.sombra p{
+   
+    color: rgba(255, 255, 255, 0.692);
+font-family: 'Inter Variable', sans-serif;
+width: 85%;
+font-size: 13px;
+margin: auto;
+margin-top: 200px;
+}
+
+</style>
