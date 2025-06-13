@@ -4,7 +4,8 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 
 import ImagenFondoInicio from '../assets/FondoPrincipal.png';
-import ImagenFondoInstructor from '../assets/Fondos/FondoInstructores.svg'
+import ImagenFondoInstructor from '../assets/Fondos/FondoInstructores.svg';
+import ImagenFondopromo from '../assets/Fondos/FondoPromos.svg';
 import ImagenReloj from '../assets/IconoReloj.png';
 // Supports weights 100-900
 import '@fontsource-variable/lexend';
@@ -85,14 +86,19 @@ import ContenidoInicio from '../components/ComponentesInicio/ContenidoInicio.ast
     Si tienes alguna pregunta o necesitas más información, no dudes en contactar con nuestros instructores. 
     Están aquí para ayudarte a alcanzar tus metas.
 </p>
+<a href="" class="VereInformacionDeInstructores"><button>INFORMACION</button></a>
 </div>
+
+<img src={ImagenFondopromo.src} alt="" class="FondoPromos">
 </center>
 
 </Layout>
 
 
 <style>
-
+::after{
+--color-tip1: rgb(255, 252, 85);
+}
     body{
         background: black;
     }
@@ -229,5 +235,28 @@ margin: 15px;
     text-align: left;
     width: 300px;
     font-size: 13px;
+     font-family: 'Lexend Variable', sans-serif;
+ }
+
+ .VereInformacionDeInstructores button{
+    border: none;
+    background: transparent;
+    color: rgb(255, 252, 85);
+    border: 2px solid rgb(255, 252, 85);
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 12px;
+    margin: 20px 0px;
+    margin-left: -170px;
+    
+ }
+ a{
+    text-decoration: none;
+ }
+
+ .FondoPromos{
+    position: relative;
+    width: 90%;
+    margin: 50px auto;
  }
 </style>
