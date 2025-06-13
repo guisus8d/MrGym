@@ -4,7 +4,8 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 
 import ImagenFondoInicio from '../assets/FondoPrincipal.png';
-import ImagenReloj from '../assets/IconoReloj.png'
+import ImagenFondoInstructor from '../assets/Fondos/FondoInstructores.svg'
+import ImagenReloj from '../assets/IconoReloj.png';
 // Supports weights 100-900
 import '@fontsource-variable/lexend';
 
@@ -66,10 +67,10 @@ import ContenidoInicio from '../components/ComponentesInicio/ContenidoInicio.ast
 </div>
 
 
-
-
 </div>
 
+
+<img src={ImagenFondoInstructor.src} alt="" class="ImagenFondoInstructores">
 
 </center>
 
@@ -147,10 +148,12 @@ margin-bottom: 30px;
     width: 85%;
     max-width: 300px;
     height: 90px;
-    background: white;
+    background: transparent;
     display: inline-block;
     margin: 10px;
-    border-radius: 20px;
+    border-radius: 10px;
+    color: white;
+    border: 2px solid white;
 }
 
 .ContenedorDeHorarios{
@@ -180,5 +183,12 @@ position: absolute;
 width: 25px;
 right: 0px;
 margin: 15px;
+}
+
+.ImagenFondoInstructores{
+    position: relative;
+    width: 90%;
+    border-radius: 10px;
+    margin: 60px auto;
 }
 </style>
