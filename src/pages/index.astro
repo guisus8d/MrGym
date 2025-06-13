@@ -4,6 +4,7 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 
 import ImagenFondoInicio from '../assets/FondoPrincipal.png';
+import ImagenReloj from '../assets/IconoReloj.png'
 // Supports weights 100-900
 import '@fontsource-variable/lexend';
 
@@ -37,6 +38,9 @@ import ContenidoInicio from '../components/ComponentesInicio/ContenidoInicio.ast
 
 <center>
 <div class="horarios">
+
+<img src={ImagenReloj.src} alt="" class="reloj">
+
 <h4>HORARIOS</h4>
 
 <p>
@@ -141,7 +145,7 @@ margin-bottom: 30px;
 .horario{
     position: relative;
     width: 85%;
-    max-width: 160px;
+    max-width: 300px;
     height: 90px;
     background: white;
     display: inline-block;
@@ -169,5 +173,12 @@ margin-bottom: 30px;
     font-size: 13px;
     text-align: left;
     margin-left: 15px;
+}
+
+.reloj{
+position: absolute;
+width: 25px;
+right: 0px;
+margin: 15px;
 }
 </style>
