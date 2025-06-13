@@ -1,13 +1,23 @@
 ---
 
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro'
+import Header from '../components/Header.astro';
+
+import ImagenFondoInicio from '../assets/FondoPrincipal.png';
 // Supports weights 100-900
 import '@fontsource-variable/lexend';
 
 // Supports weights 100-900
 import '@fontsource-variable/inter';
-import ContenidoInicio from '../components/ComponentesInicio/ContenidoInicio.astro'
+
+// Supports weights 300-900
+import '@fontsource-variable/rubik';
+
+// Supports weights 200-700
+import '@fontsource-variable/oswald';
+
+
+import ContenidoInicio from '../components/ComponentesInicio/ContenidoInicio.astro';
 ---
 
 <Layout title="Cargar">
@@ -24,6 +34,40 @@ import ContenidoInicio from '../components/ComponentesInicio/ContenidoInicio.ast
         </p>
     </div>
 </div>
+
+<center>
+<div class="horarios">
+<h4>HORARIOS</h4>
+
+<p>
+    Busca el horario que más te convenga y comienza tu viaje hacia una vida más saludable.
+</p>
+
+</div>
+
+<div class="ContenedorDeHorarios">
+<div class="horario">
+<h5>Lunes a Viernes</h5>
+<p>5:00 a. m. - 10:00 p. m.</p>
+</div>
+
+<div class="horario">
+<h5>Sabado</h5>
+<p>5:00 a. m. - 3:00 p. m.</p>
+</div>
+
+<div class="horario">
+<h5>Domingo</h5>
+<p>10:00 a. m. - 1:00 a. m.</p>
+</div>
+
+
+
+
+</div>
+
+
+</center>
 
 </Layout>
 
@@ -61,4 +105,69 @@ margin: auto;
 margin-top: 200px;
 }
 
+.SangreMROGym{
+    width: 200px;
+}
+
+.horarios{
+position: relative;
+height: 120px;
+width: 85%;
+max-width: 300px;
+background: linear-gradient(90deg, rgb(241, 229, 62), rgb(255, 202, 26));
+border-radius: 25px;
+margin-bottom: 30px;
+}
+
+.horarios h4{
+     font-family: 'Rubik Variable', sans-serif;
+     text-align: left;
+     margin: 30px;
+     position: relative;
+     top: 30px;
+     text-align: left;
+}
+
+.horarios p{
+     font-family: 'Oswald Variable', sans-serif;
+     text-align: left;
+     font-size: 12px;
+     width: 230px;
+     margin-left: -10px;
+    position: relative;
+    top: 10px;
+}
+
+.horario{
+    position: relative;
+    width: 85%;
+    max-width: 160px;
+    height: 90px;
+    background: white;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.ContenedorDeHorarios{
+    position: relative;
+    width: 100%;
+    margin: 10px auto;
+    background-color: rgb(0, 0, 0);
+}
+
+.horario h5{
+    font-family: 'Lexend Variable', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.horario p{
+    font-family: 'Lexend Variable', sans-serif;
+    font-size: 13px;
+    text-align: left;
+    margin-left: 15px;
+}
 </style>
