@@ -38,6 +38,8 @@ import ContenidoInicio from '../components/ComponentesInicio/ContenidoInicio.ast
 </div>
 
 <center>
+
+    <!-- contenedor de los horarios de trabajo del Gym -->
 <div class="horarios">
 
 <img src={ImagenReloj.src} alt="" class="reloj">
@@ -72,6 +74,18 @@ import ContenidoInicio from '../components/ComponentesInicio/ContenidoInicio.ast
 
 <img src={ImagenFondoInstructor.src} alt="" class="ImagenFondoInstructores">
 
+
+<!-- apartado sobre contactar con instructores  -->
+
+<div class="ContendorDeInformacionInstructores">
+<h5>
+    CONTACTA CON NUESTROS INSTRUCTORES
+</h5>
+<p>
+    Si tienes alguna pregunta o necesitas más información, no dudes en contactar con nuestros instructores. 
+    Están aquí para ayudarte a alcanzar tus metas.
+</p>
+</div>
 </center>
 
 </Layout>
@@ -152,8 +166,8 @@ margin-bottom: 30px;
     display: inline-block;
     margin: 10px;
     border-radius: 10px;
-    color: white;
-    border: 2px solid white;
+    color: rgba(255, 255, 255, 0.692);
+    border: 2px solid rgba(255, 255, 255, 0.692);
 }
 
 .ContenedorDeHorarios{
@@ -190,5 +204,30 @@ margin: 15px;
     width: 90%;
     border-radius: 10px;
     margin: 60px auto;
+    max-width: 700px;
 }
+
+ 
+ .ContendorDeInformacionInstructores{
+    position: relative;
+    width: 90%;
+    max-width: 700px
+ }
+
+ .ContendorDeInformacionInstructores h5{
+    font-family: 'Rubik Variable', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(255, 252, 85);
+    text-align: left;
+    font-size: 17px;
+    width: 300px;
+ }
+
+ .ContendorDeInformacionInstructores p{
+       color: rgba(255, 255, 255, 0.692);
+    text-align: left;
+    width: 300px;
+    font-size: 13px;
+ }
 </style>
