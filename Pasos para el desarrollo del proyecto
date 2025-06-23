@@ -1,0 +1,30 @@
+// primero creamos un enpoint dentro de src/pages/api/ y 
+// el documento que se encargara del envio de el formulario
+
+// tambien aremos uso de las variables de entrono .env 
+// para el envio del formulario
+
+
+// TAMBIEN UNA CONFIGURACION EN EL 
+// @ts-check
+// astro.config.mjs
+// import { defineConfig } from 'astro/config';
+// import node from '@astrojs/node';
+
+// export default defineConfig({
+  // output: 'server',
+  // adapter: node({
+    // mode: 'standalone'
+  // }),
+  // vite: {
+    // define: {
+      // 'import.meta.env.RESEND_API_KEY': JSON.stringify(process.env.RESEND_API_KEY),
+    // },
+  // },
+// });
+
+// PARA PODER TRABAJAR CON EL SERVIDOR Y LA VARIABLE DE ENTORNO .ENV
+
+
+// npm install @astrojs/node resend
+// npm install @astrojs/node

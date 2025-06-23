@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@astrojs/node": "^9.2.2",
+    "resend": "^4.6.0"
+  }
+}
